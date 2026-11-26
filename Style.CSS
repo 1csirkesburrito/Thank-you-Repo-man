@@ -2,7 +2,35 @@ body {
     margin: 0;
 }
 
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: darkgray;
+
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                transition: color 1s;
+            }
+
+            a:hover {
+                color: chartreuse;
+            }
+        }
+    }
+}
+
 figure {
+    align-items: center;
     margin: 0px;
     width: 100%;
     display: flex;
@@ -10,5 +38,26 @@ figure {
 
     img {
         max-width: 500px;
+        max-height: ;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+
+#termekek {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+
+.termek {
+    img {
+        max width: 400px;
     }
 }
